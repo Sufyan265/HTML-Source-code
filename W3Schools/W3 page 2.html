@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/W3Schools/Favicon 2.png">
+    <meta name="author" content="Muhammad Sufyan">
+    <title>W3 Practice page 2</title>
+    <style>
+        .top {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(36, 114, 231);
+        }
+
+        .list {
+            float: left;
+        }
+
+        .hyper {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .list :hover {
+            background-color: rgb(99, 159, 250);
+        }
+
+        .description {
+            background-color: rgb(117, 57, 173);
+            color: white;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 80%;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body style="font-size: larger;">
+    <ul class="top">
+        <li class="list"><a href="#Home" class="hyper">Home</a></li>
+        <li class="list"><a href="#Service" class="hyper">Service</a></li>
+        <li class="list"><a href="#Contact" class="hyper">Contact</a></li>
+        <li class="list"><a href="#About" class="hyper">About</a></li>
+        <li class="list"><a href="/W3Schools/W3 page 1.html" target="_blank" class="hyper">Page 1</a></li>
+    </ul>
+
+    <ul>
+        <li>Home</li>
+        <li>Sevice</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+
+    <dl class="description">
+        <dt>Lorem</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, nobis ex ullam fuga quam provident
+            sequi, blanditiis hic eos quod similique laboriosam. Magnam ab dicta, beatae officia totam nostrum soluta.
+        </dd>
+        <dt>Number 2</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quae alias aspernatur voluptatem,
+            provident qui obcaecati laborum ea assumenda ut natus, architecto nesciunt possimus dolor, dicta minima
+            ipsum nam ex. Sed reprehenderit, doloribus non doloremque expedita cum ipsam sint sit. Distinctio beatae
+            veniam aut doloremque eveniet sapiente mollitia? Cupiditate?</dd>
+    </dl>
+    <hr>
+    <details>
+        <summary>Albert Einstein</summary>
+        <p>Albert Einstein was a theoretical physicist who developed the theory of 
+            relativity, one of the two pillars of modern physics. He is widely considered to 
+            be one of the most influential scientists of the 20th century. In addition to his 
+            groundbreaking work in physics, Einstein was also a philosopher, a pacifist, and 
+            a humanitarian. He won the Nobel Prize in Physics in 1921 for his explanation of 
+            the photoelectric effect. Einstein died in 1955 at the age of 76.</p>
+    </details>
+
+    <!-- <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName(city);
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+        }
+    </script>
+    <hr> -->
+
+    <h2>start Javascript</h2>
+    <button type="button" onclick="document.getElementById('time').innerHTML = Date()"style="font-size: 90%;">
+        Click to show time
+    </button>
+
+    <p id="time"> </p>
+    <hr>
+
+    <p>JavaScript can change the content of an HTML element:</p>
+    <button type="button" onclick="Function()" style="font-size: 90%;"> Click to see other taxt</button>
+
+    <p id="change">My first name is Muhammad</p>
+    <script>
+        function Function() {
+            document.getElementById("change").innerHTML = "My last name is Sufyan";
+        }
+    </script>
+    <hr>
+
+    <p id="style">I change the text style by using Javascript</p>
+    <button type="button" onclick="myFunction()"style="font-size: 90%;">Click to change the text style</button>
+    <script>
+        function myFunction() {
+            document.getElementById("style").style.fontSize = "30px";
+            document.getElementById("style").style.backgroundColor = "lightblue";
+            document.getElementById("style").style.borderRadius = "5px";
+            document.getElementById("style").style.color = "red";
+        }
+    </script>
+    <hr>
+
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "/W3Schools/OFF.jpg"
+            } else { 
+                pic="/W3Schools/ON.jpg"
+            }
+             document.getElementById("photo").src=pic;
+        }
+    </script>
+    <img src="/W3Schools/OFF.jpg" id="photo">
+
+    <p>
+        
+        <button type="button" onclick="light(0)"style="font-size: 130%;">Light off</button>
+        <button type="button" onclick="light(1)"style="font-size: 130%;">Light on</button>
+    </p>
+
+
+    <hr> <br>
+    <iframe src="/W3Schools/W3 page 1.html" frameborder="2px solid black" width="600px" height="400px"></iframe>
+
+
+</body>
+
+</html>

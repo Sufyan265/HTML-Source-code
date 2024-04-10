@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4</title>
+</head>
+
+<body>
+    <!-- unorder list -->
+    <ul>
+        <li>Home </li>
+        <li>sevice</li>
+        <li>Home </li>
+        <li>sevice</li>
+    </ul>
+    <!-- ordered list -->
+    <ol type="i">
+        <li>First</li>
+        <li>second</li>
+        <li>Third</li>
+    </ol>
+    <hr>
+    <!-- <table> -->
+    <div>
+        <table>
+            <caption>Student Marks</caption>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>35</td>
+                    <td>Sufyan</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>ali</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <!-- Form -->
+    <div>
+        <h1>Type your phone number</h1>
+        <form action="form.php">
+            <input type="text" placeholder="Mobile">
+                <!-- radio -->
+            <label for="ida">
+                <input type="radio" value="Mobile a" name="Mobile" id="ida">Jazz
+            </label>
+            <label for="idb">
+                <input type="radio" value="Mobile b" name="Mobile" id="idb">zong
+            </label><br><br>
+            <hr>
+            <!-- textarea -->
+            <textarea name="need" id="need" cols="30" rows="10" placeholder="why you need this?"></textarea>
+            <hr>
+            <!-- select -->
+            <select name="color" id="color">
+                <option value="select"> select color</option>
+                <option value="red">red</option>
+                <option value="white">white</option>
+                <option value="blue">blue</option>
+            </select><br>
+            <!-- video -->
+            <video src="/Chapter4/plant.mp4" poster="/Chapter4/Thumnail.jpg" muted controls loop width="400"></video>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
